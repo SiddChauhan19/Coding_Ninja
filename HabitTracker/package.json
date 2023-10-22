@@ -1,0 +1,25 @@
+{
+  "name": "habittracker",
+  "version": "1.0.0",
+  "description": "\"To Track any task or Habit\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "Habit",
+    "Tracker",
+    "Node.js"
+  ],
+  "author": "Siddhant Chauhan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^5.13.10",
+    "nodemon": "^3.0.1",
+    "sweetalert": "^2.1.2"
+  }
+}
