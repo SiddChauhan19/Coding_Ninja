@@ -1,9 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const port = process.env.PORT || '8080';
-const swaggerUI = require('swagger-ui-express');
-const YAML = require('yamljs');
-const swaggerDocument = YAML.load('./swagger.yaml');
+
+
 const app = express();
 const db = require('./config/mongoose');
 const passport = require('passport');
@@ -17,7 +16,7 @@ app.get('/', (req, res) => {
   });
 });
 
-app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
+
 
 //loading the router
 app.use('/', require('./routes/index'));
